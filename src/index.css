@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.tongkat{
+  border-left: 4px solid #9278FE;
+}
+.tongkats{
+  border-left: 3px solid #9278FE;
+  border-top: 3px solid #9278FE;
+  border-radius: 5px 0px 0px 0px;
+}
+.pinggiran{
+  left: -30px;
+  height: 400px;
+  width: 400px;
+  background: linear-gradient( #5645FF, #9278FE );
+  transform: rotateZ(30deg);
+}
+.pinggiran-kanan{
+  margin-right: -100px;
+  margin-bottom: -150px;
+  height: 400px;
+  width: 400px;
+  background: linear-gradient( #9278FE, #5645FF  );
+  transform: rotateZ(60deg);
+}
+.hello{
+  font-family: 'Caveat', cursive;
+  font-family: 'Pacifico', cursive;
+}
