@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Linkedin } from "react-feather";
-import { Mail } from "react-feather";
-import { GitHub } from "react-feather";
+import { GitHub, Email, LinkedIn } from "@mui/icons-material";
 
 const Contacts = () => {
   const [isClicked, setIsclicked] = useState();
@@ -11,22 +9,24 @@ const Contacts = () => {
 
   const handleMouseDown = () => {
     setIsclicked(true);
+    setTimeout(()=> {
+      setIsclicked(false)
+    },300)
   };
-  const handleMouseUp = () => {
-    setIsclicked(false);
-  };
+  
   const handleMouseDown1 = () => {
     setIsclicked1(true);
-  };
-  const handleMouseUp1 = () => {
-    setIsclicked1(false);
+    setTimeout(()=> {
+      setIsclicked1(false)
+    },300)
   };
   const handleMouseDown2 = () => {
     setIsclicked2(true);
+    setTimeout(()=> {
+      setIsclicked2(false)
+    },300)
   };
-  const handleMouseUp2 = () => {
-    setIsclicked2(false);
-  };
+
 
   const buttonClicked = isClicked
     ? "p-2 block m-2 bg-transparent border rounded-lg"
@@ -55,25 +55,25 @@ const Contacts = () => {
               to={"https://github.com/Iqbalnglames"}
               target="_blank"
               onMouseDown={handleMouseDown}
-              onMouseUp={handleMouseUp}
+             
               className={buttonClicked}>
-              <GitHub className="inline mr-2" />
+              <GitHub className="mr-1"/>
               Github
             </Link>
             <Link
               to={"mailto:mi06514@gmail.com"}              
               onMouseDown={handleMouseDown1}
-              onMouseUp={handleMouseUp1}
+         
               className={buttonClicked1}>
-              <Mail className="inline mr-2" /> Gmail
+              <Email className="mr-1"/> Gmail
             </Link>
             <Link
               to={"https://www.linkedin.com/in/muhammad-iqbal-2544981aa/"}
               target="_blank"
               onMouseDown={handleMouseDown2}
-              onMouseUp={handleMouseUp2}
+        
               className={buttonClicked2}>
-              <Linkedin className="inline mr-2" />
+              <LinkedIn className="mr-1"/>
               Linkedin
             </Link>
           </div>

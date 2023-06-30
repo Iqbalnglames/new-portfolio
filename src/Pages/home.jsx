@@ -7,20 +7,19 @@ const Home = () => {
 
   const handleMouseDown = () => {
     setIsClicked(true)
+    setTimeout(()=> {
+      setIsClicked(false)
+    },200)
   }
   const handleMouseDown1 = () => {
     setIsClicked1(true)
+    setTimeout(()=> {
+      setIsClicked1(false)
+    },200)
   }
 
-  const handleMouseUp = () => {
-    setIsClicked(false)
-  }
-
-  const handleMouseUp1 = () => {
-    setIsClicked1(false)
-  }
-  const ClickedStylebw = isClicked ? "p-3  mx-4 bg-slate-300 text-black border border-b border-black rounded-xl" : "p-3 mx-4 bg-white text-black border border-b-[5px] border-black rounded-xl"
-  const ClikcedStyleclr = isClicked1 ? "p-3 mx-4 border rounded-lg border-b bg-[#513EEC]" : "p-3 mx-4  border rounded-lg border-b-[5px] bg-[#6451FF]"
+  const ClickedStylebw = isClicked ? "p-3  mx-4 bg-slate-300 text-black border border-b border-black rounded-xl" : "p-3 mx-4 bg-white text-black border border-b-[5px] border-black rounded-xl slide-top"
+  const ClikcedStyleclr = isClicked1 ? "p-3 mx-4 border rounded-lg border-b bg-[#513EEC]" : "p-3 mx-4 slide-top2 border rounded-lg border-b-[5px] bg-[#6451FF]"
 
 
   return (
@@ -28,8 +27,8 @@ const Home = () => {
       <div className="flex">
 
         <div className="mr-16">
-          <h1 className="text-7xl mb-5 hello">Hello.</h1>
-          <div className="tongkat ml-1">
+          <h1 className="text-7xl mb-5 slide-right hello">Hello.</h1>
+          <div className="tongkat ml-1 slide-right2">
             <p className=" pl-6 ml-2">
               Namaku Muhammad Iqbal Tsabitul Azmi, Aku adalah junior Fullstack
               developer,
@@ -60,8 +59,8 @@ const Home = () => {
         </div>
       </div>
         <div className="mt-10">
-            <Link to={'profile'} onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} className={ClickedStylebw}>Profil Lengkapku</Link>
-            <Link to={"/contacts"} onMouseDown={handleMouseDown1} onMouseUp={handleMouseUp1} className={ClikcedStyleclr}>Contact Me</Link>
+            <Link to={'profile'} onMouseDown={handleMouseDown} className={ClickedStylebw}>Profil Lengkapku</Link>
+            <Link to={"contacts"} onMouseDown={handleMouseDown1} className={ClikcedStyleclr}>Contact Me</Link>
         </div>
     </>
   );
