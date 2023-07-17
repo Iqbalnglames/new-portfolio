@@ -32,23 +32,23 @@ const Profile = () => {
     }, 300);
   };
   const kelahiran = () => {
-    setTimeout(()=>{
+    setTimeout(() => {
       setLahir(!lahir);
-    },200)
+    }, 200)
     setPendidikan(false)
     setSkill(false)
   };
   const didik = () => {
-    setTimeout(()=>{
+    setTimeout(() => {
       setPendidikan(!pendidikan)
-    },200)
+    }, 200)
     setLahir(false)
     setSkill(false)
   }
   const ability = () => {
-    setTimeout(()=>{
+    setTimeout(() => {
       setSkill(!skill)
-    },200)
+    }, 200)
     setLahir(false)
     setPendidikan(false)
   }
@@ -70,13 +70,13 @@ const Profile = () => {
           Profil Lengkapku
         </h1>
         <div className="flex">
-          <figure className="">
+          <figure className="slide-top-profile">
             <img
               src="https://media.licdn.com/dms/image/C4D03AQHdhL1FnQ-8rg/profile-displayphoto-shrink_400_400/0/1657110066127?e=1692230400&v=beta&t=TH6lApRgYw9aES6TrtWwhdBIUQb9yQvXeIjqaQj42PQ"
               alt="my profile"
             />
           </figure>
-          <div className="mt-5 ml-4 w-72">
+          <div className="mt-5 ml-4 w-72 slide-top-profile2">
             <Link
               to={""}
               onClick={kelahiran}
@@ -87,7 +87,7 @@ const Profile = () => {
               Detail Kelahiran
             </Link>
             {lahir ? (
-              <div id="upper" className="p-2 z-10 slide-bottom block m-1 mt-[-12px] border-[3px] rounded-b-lg border-t-0">
+              <div id="upper" className="mb-3 p-2 z-10 slide-bottom block m-1 mt-[-12px] border-[3px] rounded-b-lg border-t-0">
                 <div className="py-2">
                   <h1 className="font-bold">Lahir Pada :</h1>
                   <h1>Madiun 5 Februari 2002</h1>
@@ -102,18 +102,18 @@ const Profile = () => {
             >
               <LocalLibraryIcon className="inline" /> Riwayat Pendidikan
             </Link>
-            {pendidikan ? <div className="p-2 block m-1 mt-[-12px] border-[3px] rounded-b-lg slide-bottom border-t-0">
+            {pendidikan ? <div className="mb-3 p-2 block m-1 mt-[-12px] border-[3px] rounded-b-lg slide-bottom border-t-0">
               <div className="py-2 ">
-              <h1 className="font-bold">Junior High School :</h1>
-              <h1>MTs Al Irsyad Tengaran</h1>
-              <h1 className="font-bold">Senior High School :</h1>
-              <h1>MA Al Irsyad Tengaran</h1>
-              <h1 className="font-bold">First College :</h1>
-              <h1>IDN Polythecnic Bogor</h1>
-              <h1 className="font-bold">Second College :</h1>
-              <h1>STMIK AMIKOM Surakarta</h1>
-              </div>              
-              </div> : null}
+                <h1 className="font-bold">Junior High School :</h1>
+                <h1>MTs Al Irsyad Tengaran</h1>
+                <h1 className="font-bold">Senior High School :</h1>
+                <h1>MA Al Irsyad Tengaran</h1>
+                <h1 className="font-bold">First College :</h1>
+                <h1>IDN Polythecnic Bogor</h1>
+                <h1 className="font-bold">Second College :</h1>
+                <h1>STMIK AMIKOM Surakarta</h1>
+              </div>
+            </div> : null}
             <Link
               to={""}
               onMouseDown={handleMouseDown2}
@@ -124,19 +124,19 @@ const Profile = () => {
               Skill yang dikuasai
             </Link>
             {skill ? (
-              <div className="p-2 z-10 px-4 slide-bottom block m-1 mt-[-12px] border-[3px] rounded-b-lg border-t-0">
+              <div className="mb-3 p-2 z-10 px-4 slide-bottom block m-1 mt-[-12px] border-[3px] rounded-b-lg border-t-0">
                 <div className="flex justify-between">
-                <div className="py-2">
-                  <h1 className="font-bold">FrontEnd</h1>
-                  <h1 className="hover:font-bold">HTML 5</h1>
-                  <h1 className="hover:font-bold">CSS 3</h1>
-                  <h1 className="hover:font-bold">Tailwind</h1>
-                  <h1 className="hover:font-bold">Javascript</h1>
-                  <h1 className="hover:font-bold">React Js</h1>
-                </div>
-                <div className="py-2">
-                  <h1 className="font-bold">BackEnd</h1>
-                </div>
+                  <div className="py-2">
+                    <h1 className="font-bold">FrontEnd</h1>
+                    <h1 className="hover:font-bold">HTML 5</h1>
+                    <h1 className="hover:font-bold">CSS 3</h1>
+                    <h1 className="hover:font-bold">Tailwind</h1>
+                    <h1 className="hover:font-bold">Javascript</h1>
+                    <h1 className="hover:font-bold">React Js</h1>
+                  </div>
+                  <div className="py-2">
+                    <h1 className="font-bold">BackEnd</h1>
+                  </div>
                 </div>
               </div>
             ) : null}

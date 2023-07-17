@@ -1,6 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation()
+  const Page = location.pathname
+  const unClicked = "p-4 text-[#9D93FF] hover:text-white hover:font-bold"
+  const clicked = "p-4 hover:text-white font-bold text-white"
+
   return (
     <div className="flex justify-between px-10">
       <div>
@@ -11,31 +16,31 @@ const Navbar = () => {
       <div>
         <Link
           to={"/"}
-          className="p-4 text-[#9D93FF] hover:text-white hover:font-bold focus:text-white"
+          className={Page === "/" ? clicked : unClicked}
         >
           Home
         </Link>
         <Link
-          to={"/"}
-          className="p-4 text-[#9D93FF] hover:text-white hover:font-bold focus:text-white"
+          to={"/projects"}
+          className={Page === "/projects" ? clicked : unClicked}
         >
           Projects
         </Link>
         <Link
-          to={"/"}
-          className="p-4 text-[#9D93FF] hover:text-white hover:font-bold focus:text-white"
+          to={"/certificates"}
+          className={Page === "/certificates" ? clicked : unClicked}
         >
           Certificates
         </Link>
         <Link
           to={"/profile"}
-          className="p-4 text-[#9D93FF] hover:text-white hover:font-bold focus:text-white"
+          className={Page === "/profile" ? clicked : unClicked}
         >
           Profile
         </Link>
         <Link
           to={"/contacts"}
-          className="p-4 text-[#9D93FF] hover:text-white hover:font-bold focus:text-white"
+          className={Page === "/contacts" ? clicked : unClicked}
         >
           Contacts
         </Link>

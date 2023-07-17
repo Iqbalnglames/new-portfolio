@@ -2,20 +2,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [ isClicked, setIsClicked ] = useState('')
-  const [ isClicked1, setIsClicked1 ] = useState('')
+  const [isClicked, setIsClicked] = useState('')
+  const [isClicked1, setIsClicked1] = useState('')
 
   const handleMouseDown = () => {
     setIsClicked(true)
-    setTimeout(()=> {
+    setTimeout(() => {
       setIsClicked(false)
-    },200)
+    }, 200)
   }
   const handleMouseDown1 = () => {
     setIsClicked1(true)
-    setTimeout(()=> {
+    setTimeout(() => {
       setIsClicked1(false)
-    },200)
+    }, 200)
   }
 
   const ClickedStylebw = isClicked ? "p-3  mx-4 bg-slate-300 text-black border border-b border-black rounded-xl" : "p-3 mx-4 bg-white text-black border border-b-[5px] border-black rounded-xl slide-top"
@@ -43,25 +43,30 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 slide-right3">
           <h1 className="text-2xl mb-3">Project</h1>
           <div className="tongkats pt-3 pl-3">
             <p>
               <Link
-                to={"https://codesandbox.io/s/qr-scanner-with-react-d1p16c"} target="_blank">
+                to={"https://codesandbox.io/s/qr-scanner-with-react-d1p16c"} target="_blank"
+                className="hover:font-bold"
+              >
                 Qr absen
               </Link>
             </p>
             <p>
-              <Link>sistem perawatan transportasi</Link>
+              <Link
+                className="hover:font-bold"
+                to={'https://pslk.net/ul4krysx'}
+              >sistem perawatan transportasi</Link>
             </p>
           </div>
         </div>
       </div>
-        <div className="mt-10">
-            <Link to={'profile'} onMouseDown={handleMouseDown} className={ClickedStylebw}>Profil Lengkapku</Link>
-            <Link to={"contacts"} onMouseDown={handleMouseDown1} className={ClikcedStyleclr}>Contact Me</Link>
-        </div>
+      <div className="mt-10">
+        <Link to={'profile'} onMouseDown={handleMouseDown} className={ClickedStylebw}>Profil Lengkapku</Link>
+        <Link to={"contacts"} onMouseDown={handleMouseDown1} className={ClikcedStyleclr}>Contact Me</Link>
+      </div>
     </>
   );
 };
