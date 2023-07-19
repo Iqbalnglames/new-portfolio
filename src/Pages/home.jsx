@@ -44,14 +44,14 @@ const Home = () => {
         </div>
 
         <div className="mt-10 slide-right3">
-          <h1 className="text-2xl mb-3">Project</h1>
-          <div className="tongkats pt-3 pl-3">
+          <h1 className="text-2xl mb-3 quicksand">Project</h1>
+          <div className="tongkats pt-3 pl-3 w-64">
             <p>
               <Link
                 to={"https://codesandbox.io/s/qr-scanner-with-react-d1p16c"} target="_blank"
                 className="hover:font-bold"
               >
-                Qr absen
+                Qr Scanner
               </Link>
             </p>
             <p>

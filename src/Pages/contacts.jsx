@@ -40,7 +40,7 @@ const Contacts = () => {
 
   return (
     <div className="">
-      <div className="flex">
+      <div className="flex slide-top-profile">
         <figure>
           <img
             src="https://media.licdn.com/dms/image/C4D03AQHdhL1FnQ-8rg/profile-displayphoto-shrink_400_400/0/1657110066127?e=1692230400&v=beta&t=TH6lApRgYw9aES6TrtWwhdBIUQb9yQvXeIjqaQj42PQ"
@@ -48,9 +48,9 @@ const Contacts = () => {
           />
         </figure>
         <div className="ml-4">
-          <h1 className="text-2xl font-bold">My Contacts</h1>
+          <h1 className="text-2xl font-bold slide-top-profile">My Contacts</h1>
 
-          <div className="mt-5">
+          <div className="mt-5 slide-top-profile2 w-48">
             <Link
               to={"https://github.com/Iqbalnglames"}
               target="_blank"
@@ -79,7 +79,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      <figcaption className="mr-48">
+      <figcaption className="mr-48 slide-right3">
         <p>
           Kegigihan dan ambisi dalam bekerja selalu saya kedepankan, karena
           sebagai muslim Amanah adalah nomer satu dibawah ibadah, saya selalu
