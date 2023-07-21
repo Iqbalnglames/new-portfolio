@@ -40,13 +40,7 @@ const Contacts = () => {
 
   return (
     <div className="">
-      <div className="flex slide-top-profile">
-        <figure>
-          <img
-            src="https://media.licdn.com/dms/image/C4D03AQHdhL1FnQ-8rg/profile-displayphoto-shrink_400_400/0/1657110066127?e=1692230400&v=beta&t=TH6lApRgYw9aES6TrtWwhdBIUQb9yQvXeIjqaQj42PQ"
-            alt="my profile"
-          />
-        </figure>
+      <div className="lg:flex slide-top-profile text-center">
         <div className="ml-4">
           <h1 className="text-2xl font-bold slide-top-profile">My Contacts</h1>
 
@@ -79,15 +73,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      <figcaption className="mr-48 slide-right3">
-        <p>
-          Kegigihan dan ambisi dalam bekerja selalu saya kedepankan, karena
-          sebagai muslim Amanah adalah nomer satu dibawah ibadah, saya selalu
-          memprioritaskan Amanah yang saya pikul, dan saya sangat amat senang
-          dengan hal hal yang berhubungan dengan komputer dan programming serta
-          suka dan berminat untuk berfikir inovasi terbaru
-        </p>
-      </figcaption>
+      
     </div>
   );
 };
