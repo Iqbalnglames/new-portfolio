@@ -18,15 +18,15 @@ const Home = () => {
     }, 200)
   }
 
-  const ClickedStylebw = isClicked ? "p-3  mx-4 bg-slate-300 text-black border border-b border-black rounded-xl" : "p-3 mx-4 bg-white text-black border border-b-[5px] border-black rounded-xl slide-top"
-  const ClikcedStyleclr = isClicked1 ? "p-3 mx-4 border rounded-lg border-b bg-[#513EEC]" : "p-3 mx-4 slide-top2 border rounded-lg border-b-[5px] bg-[#6451FF]"
+  const ClickedStylebw = isClicked ? "p-3  lg:mx-4 lg:inline block my-2 bg-slate-300 text-black border border-b border-black rounded-xl" : "p-3 lg:mx-4 lg:inline block my-2 bg-white text-black border border-b-[5px] border-black rounded-xl slide-top"
+  const ClikcedStyleclr = isClicked1 ? "p-3 lg:mx-4 lg:inline block my-2 border rounded-lg border-b bg-[#513EEC]" : "p-3 lg:mx-4 lg:inline block my-2 slide-top2 border rounded-lg border-b-[5px] bg-[#6451FF]"
 
 
   return (
     <>
-      <div className="flex">
+      <div className="lg:flex">
 
-        <div className="mr-16">
+        <div className="lg:mr-16 mx-2">
           <h1 className="text-7xl mb-5 slide-right hello">Hello.</h1>
           <div className="tongkat ml-1 slide-right2">
             <p className=" pl-6 ml-2">
