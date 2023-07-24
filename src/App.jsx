@@ -4,7 +4,7 @@ import Navigation from "./Utilities/router"
 function App() {
 
   return (
-    <div className="bg-[#4F3DFF] lg:p-16 p-10 h-auto left-6 right-6 rounded-2xl text-white">
+    <div className="bg-[#4F3DFF] lg:p-16 p-10 lg:h-[95.5vh] h-auto left-6 right-6 rounded-2xl text-white">
      <Navbar />
      <div className="flex justify-center">
      <Navigation />
