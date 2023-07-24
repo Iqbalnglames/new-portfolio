@@ -39,7 +39,7 @@ const Contacts = () => {
     : "p-2 block m-1 bg-transparent border border-b-[5px] rounded-lg";
 
   return (
-    <div className="">
+    <div className="h-[95.5vh]">
       <div className="lg:flex slide-top-profile text-center">
         <div className="ml-4">
           <h1 className="text-2xl font-bold slide-top-profile">My Contacts</h1>

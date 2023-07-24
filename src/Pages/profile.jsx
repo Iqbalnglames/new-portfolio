@@ -65,7 +65,7 @@ const Profile = () => {
 
   return (
     <>
-      <div>
+      <div className="h-[95.5vh]">
         <h1 className="text-center mb-10 text-2xl font-bold">
           Profil Lengkapku
         </h1>
