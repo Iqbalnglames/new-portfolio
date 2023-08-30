@@ -1,75 +1,22 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { GitHub, Email, LinkedIn } from "@mui/icons-material";
 
 const Contacts = () => {
-  const [isClicked, setIsclicked] = useState();
-  const [isClicked1, setIsclicked1] = useState();
-  const [isClicked2, setIsclicked2] = useState();
-
-  const handleMouseDown = () => {
-    setIsclicked(true);
-    setTimeout(()=> {
-      setIsclicked(false)
-    },300)
-  };
-  
-  const handleMouseDown1 = () => {
-    setIsclicked1(true);
-    setTimeout(()=> {
-      setIsclicked1(false)
-    },300)
-  };
-  const handleMouseDown2 = () => {
-    setIsclicked2(true);
-    setTimeout(()=> {
-      setIsclicked2(false)
-    },300)
-  };
-
-
-  const buttonClicked = isClicked
-    ? "p-2 block m-2 bg-transparent border rounded-lg"
-    : "p-2 block m-1 bg-transparent border border-b-[5px] rounded-lg";
-  const buttonClicked1 = isClicked1
-    ? "p-2 block m-2 bg-transparent border rounded-lg"
-    : "p-2 block m-1 bg-transparent border border-b-[5px] rounded-lg";
-  const buttonClicked2 = isClicked2
-    ? "p-2 block m-2 bg-transparent border rounded-lg"
-    : "p-2 block m-1 bg-transparent border border-b-[5px] rounded-lg";
-
   return (
     <div className="h-[95.5vh]">
       <div className="lg:flex slide-top-profile text-center">
         <div className="ml-4">
-          <h1 className="text-2xl font-bold slide-top-profile">My Contacts</h1>
-
-          <div className="mt-5 slide-top-profile2 w-48">
-            <Link
-              to={"https://github.com/Iqbalnglames"}
-              target="_blank"
-              onMouseDown={handleMouseDown}
-             
-              className={buttonClicked}>
-              <GitHub className="mr-1"/>
-              Github
-            </Link>
-            <Link
-              to={"mailto:mi06514@gmail.com"}              
-              onMouseDown={handleMouseDown1}
-         
-              className={buttonClicked1}>
-              <Email className="mr-1"/> Gmail
-            </Link>
-            <Link
-              to={"https://www.linkedin.com/in/muhammad-iqbal-2544981aa/"}
-              target="_blank"
-              onMouseDown={handleMouseDown2}
-        
-              className={buttonClicked2}>
-              <LinkedIn className="mr-1"/>
-              Linkedin
-            </Link>
+          <h1 className="text-2xl font-bold slide-top-profile">My Social Media</h1>
+          <div className="mt-4">
+          <Link target="_blank" to={"https://www.linkedin.com/in/muhammad-iqbal-2544981aa/"} className="transition-button block p-3 w-44 my-3 font-bold border border-white rounded-md">
+           <LinkedIn/> Linkedin
+          </Link>
+          <Link target="_blank" to={"https://github.com/Iqbalnglames"} className="transition-button block p-3 w-44 my-3 font-bold border border-white rounded-md">
+           <GitHub/> Github
+          </Link>
+          <Link target="_blank" to={"mailto:mi06514@gmail.com"} className="transition-button block p-3 w-44 my-3 font-bold border border-white rounded-md">
+           <Email/> Gmail
+          </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Pacifico&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -116,5 +116,33 @@
   }
 }
 .quicksand {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+.transition-button {  
+  box-shadow: 0.25rem 0.25rem #ffff;
+  transition: transform 50ms, box-shadow 50ms;
+}
+.transition-button-white {  
+  box-shadow: 0.25rem 0.25rem #000000;
+  transition: transform 50ms, box-shadow 50ms;
+}
+.transition-button-white:active {
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.125rem 0.125rem #000000;
+}
+.transition-button:active {
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.125rem 0.125rem #ffff;
+}
+.slider-up {
+  opacity: 0;
+  transform: translateY(-18px);
+}
+.slider {
+  transition: 0.5s;
+  line-height: 1;
+  transform: none;
+}
+.card {
+  box-shadow: 0.425rem 0.425rem #000000;
 }
