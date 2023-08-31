@@ -7,15 +7,15 @@ const Home = () => {
       <div className="lg:flex">
         <div className="lg:mr-16 mx-2">
           <h1 className="text-7xl mb-5 slide-right hello">Hello.</h1>
-          <div className="tongkat ml-1 slide-right2">
-            <p className=" pl-6 ml-2">
+          <div className="tongkat ml-1 slide-right2 text-xl">
+            <p className=" pl-6 -ml-2">
               Namaku Muhammad Iqbal Tsabitul Azmi, Aku adalah junior Fullstack
               developer,
             </p>
-            <p className=" pl-6 ml-2">
+            <p className=" pl-6 -ml-2">
               saat ini berdomisili di Klaten, Jawa Tengah Indonesia.
             </p>
-            <p className=" pl-6 ml-2">
+            <p className=" pl-6 -ml-2">
               Saat ini aku telah membuat satu project developing mulai dari
               frontend maupun backend.
             </p>
@@ -23,8 +23,8 @@ const Home = () => {
         </div>
 
         <div className="mt-10 slide-right3">
-          <h1 className="text-2xl mb-3 quicksand">Project</h1>
-          <div className="tongkats pt-3 pl-3 w-64">
+          <h1 className="text-3xl mb-3">Project</h1>
+          <div className="tongkats text-xl pt-1 pl-3 w-64">
             <p>
               <Link
                 to={"https://codesandbox.io/s/qr-scanner-with-react-d1p16c"} target="_blank"

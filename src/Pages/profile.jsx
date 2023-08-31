@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import iqbal from '../assets/iqbal.png'
 
 const Profile = () => {    
   return (
@@ -9,7 +10,7 @@ const Profile = () => {
     <div className="lg:flex lg:space-x-20 slide-right2">
       <div>
         <figure className="ml-8">
-      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="" width={200} />
+      <img src={iqbal} alt="" width={200} height={200} />
         </figure>
       </div>
       <div className="mt-1">

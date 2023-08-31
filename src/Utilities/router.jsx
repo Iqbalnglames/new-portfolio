@@ -6,7 +6,7 @@ import Projects from "../Pages/projects"
 
 const Navigation = () => {
     return(
-        <div className="mt-14 px-20">
+        <div className="mt-14 px-10">
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
