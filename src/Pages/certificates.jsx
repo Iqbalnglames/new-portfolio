@@ -8,19 +8,19 @@ const Certificates = () => {
             cert_name: 'HTML Dasar',
             img: html,
             source: "Skillvul",
-            link: "blalalala"
+            link: ""
         },
         {
             cert_name: 'Javascript Intermediate',
             img: jss,
             source: "Sololearn",
-            link: "blalalala"
+            link: ""
         },
         {
             cert_name: 'Javascript Dasar',
             img: js,
             source: "Dicoding",
-            link: "blalalala"
+            link: "https://www.dicoding.com/certificates/72ZD821KLZYW"
         }
     ]
     return (
