@@ -9,12 +9,6 @@ function App() {
      <div className="flex justify-center">
      <Navigation />
      </div>
-     <div className="flex justify-end">
-     <div className="lg:fixed bottom-16">
-      <p className="text-lg">Developed By</p>
-      <p className="text-2xl">TechBatch Technology</p>
-     </div>
-     </div>
     </div>
   )
 }

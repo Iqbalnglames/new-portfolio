@@ -3,6 +3,7 @@ import Home from "../Pages/home"
 import Contacts from "../Pages/contacts"
 import Profile from "../Pages/profile"
 import Projects from "../Pages/projects"
+import Certificates from "../Pages/certificates"
 
 const Navigation = () => {
     return(
@@ -12,6 +13,7 @@ const Navigation = () => {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/certificates" element={<Certificates />} />
         </Routes>
         </div>
     )
