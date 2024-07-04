@@ -3,7 +3,7 @@ import { GitHub, Email, LinkedIn } from "@mui/icons-material";
 
 const Contacts = () => {
   return (
-    <div className="h-[95.5vh]">
+    <div className="h-screen">
       <div className="lg:flex slide-top-profile text-center">
         <div className="ml-4">
           <h1 className="text-2xl font-bold slide-top-profile">My Social Media</h1>
