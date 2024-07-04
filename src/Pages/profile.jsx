@@ -3,7 +3,7 @@ import iqbal from '../assets/iqbal.png'
 
 const Profile = () => {
   return (
-    <div className="mt-10 grid pb-48">
+    <div className="mt-10 h-screen grid pb-48">
       <h1 className="mb-5 slide-right text-center text-2xl">About Me</h1>
       <div className="lg:flex grid grid-col place-items-center slide-right2">
         <img src={iqbal} alt="my-profile-photo" width={200} className="lg:mr-5"/>                
