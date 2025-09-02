@@ -4,11 +4,11 @@ const Profile = () => {
   return (
     <div className="slide-right text-center mb-10">
       <h1 className="text-xl font-bold">About Me</h1>
-      <div className="mt-5 flex space-x-10">
+      <div className="mt-5 flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-10">
         <img src={iqbal} alt="muhammad iqbal" width={200} />
         <div className="flex flex-col">
           <div className="text-left flex space-x-1">
-            <div className="space-y-7">
+            <div className="space-y-7 font-bold">
               <p>Full Name</p>
               <p>Age</p>
               <p>Email</p>
