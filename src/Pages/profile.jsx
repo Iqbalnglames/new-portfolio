@@ -1,33 +1,38 @@
-import { Link } from "react-router-dom";
-import iqbal from '../assets/iqbal.png'
+import iqbal from "../assets/iqbal.png";
 
 const Profile = () => {
   return (
-    <div className="mt-10 h-screen grid pb-48">
-      <h1 className="mb-5 slide-right text-center text-2xl">About Me</h1>
-      <div className="lg:flex grid grid-col place-items-center slide-right2">
-        <img src={iqbal} alt="my-profile-photo" width={200} className="lg:mr-5"/>                
-          <figcaption>
-            <div className="flex">            
-            <div className=":lg:mr-5 font-bold flex flex-col space-y-9">
-              <h1>Full Name</h1>
-              <h1>Age</h1>
-              <h1>Email</h1>
-              <h1>Freelance</h1>
+    <div className="slide-right text-center mb-10">
+      <h1 className="text-xl font-bold">About Me</h1>
+      <div className="mt-5 flex space-x-10">
+        <img src={iqbal} alt="muhammad iqbal" width={200} />
+        <div className="flex flex-col">
+          <div className="text-left flex space-x-1">
+            <div className="space-y-7">
+              <p>Full Name</p>
+              <p>Age</p>
+              <p>Email</p>
+              <p>Freelance</p>
             </div>
-            <div className="space-y-9 flex flex-col">
-              <h1>: Muhammad Iqbal Tsabitul Azmi</h1>
-              <h1>: 22 Years Old</h1>
-              <h1>: mi06514@gmail.com</h1>
-              <h1>: Available</h1>
+            <div className="space-y-7">
+              <p>: Muhammad Iqbal Tsabitul Azmi</p>
+              <p>: 23 Years Old</p>
+              <p>: mi06514@gmail.com</p>
+              <p>: Available</p>
             </div>
-            </div>
-      <button className="p-2 lg:inline block my-2 bg-white active:bg-slate-300 text-black border border-b border-black rounded-md transition-button-white slide-top w-64">
-        <Link target="_blank" className="p-2" to={'https://drive.google.com/file/d/17TGogHC9Z7bOph97NqGCu3dy4uQG8HDa/view?usp=drive_link'} >Show My CV</Link>
-        </button>        
-          </figcaption>
+          </div>
+          <div className="flex mt-7">
+            <a
+              target="_blank"
+              className="p-3 w-64 bg-white active:bg-slate-300 text-black border border-b border-black rounded-md transition-button-white slide-top"
+              href="https://drive.google.com/file/d/1N3SRrRVqb2SBInMemU0wIZbjVkZVNjWm/view?usp=sharing"
+            >
+              View My CV
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 };
 export default Profile;

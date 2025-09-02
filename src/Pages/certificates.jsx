@@ -1,28 +1,6 @@
-import html from '../assets/html.png'
-import js from '../assets/js-dicoding.png'
-import jss from '../assets/js-sololearn.png'
 import { Link } from 'react-router-dom'
+import { cert } from '../Utilities/certificates'
 const Certificates = () => {
-    const cert = [
-        {
-            cert_name: 'HTML Dasar',
-            img: html,
-            source: "Skillvul",
-            link: ""
-        },
-        {
-            cert_name: 'Javascript Intermediate',
-            img: jss,
-            source: "Sololearn",
-            link: ""
-        },
-        {
-            cert_name: 'Javascript Dasar',
-            img: js,
-            source: "Dicoding",
-            link: "https://www.dicoding.com/certificates/72ZD821KLZYW"
-        }
-    ]
     return (
         <div className='slide-right text-center mb-7 font-bold text-xl -mt-3'>
             <h1 className='mb-4'>My Certificates</h1>

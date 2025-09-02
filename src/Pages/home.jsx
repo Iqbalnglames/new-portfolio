@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-
+import { projectArr } from "../Utilities/projects";
 const Home = () => {
-
+const link1 = Math.floor(Math.random() * projectArr.length)
+const link2 = Math.floor(Math.random() * projectArr.length)
   return (
     <>
       <div className="lg:flex">
@@ -27,24 +28,19 @@ const Home = () => {
           <div className="tongkats text-xl pt-1 pl-3 w-64">
             <p>
               <Link
-                to={"https://codesandbox.io/s/qr-scanner-with-react-d1p16c"} target="_blank"
+                to={projectArr[link1].link} target="_blank"
                 className="hover:font-bold"
               >
-                Qr Scanner
+                {projectArr[link1].project_name}
               </Link>
             </p>
-            {/* <p>
-              <Link
-                className="hover:font-bold"
-                to={'https://pslk.net/ul4krysx'}
-              >sistem perawatan transportasi</Link>
-            </p> */}
             <p>
               <Link
+                to={projectArr[link2].link} target="_blank"
                 className="hover:font-bold"
-                to={'https://technical-test-iqbalazmi.netlify.app/'}
-                target="_blank"
-              >Restaurant List with Filter</Link>
+              >
+                {projectArr[link2].project_name}
+              </Link>
             </p>
             <p>
               <Link

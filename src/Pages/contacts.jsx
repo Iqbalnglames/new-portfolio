@@ -20,7 +20,6 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
