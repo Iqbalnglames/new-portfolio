@@ -6,7 +6,11 @@ const Projects = () => {
             <h1 className="slide-right text-center mb-7 font-bold text-xl -mt-3">
                 My Projects
             </h1>
-            <div className="lg:flex lg:justify-around space-y-9 lg:space-y-0 lg:space-x-9">
+            <div className="lg:flex text-center flex-col items-center gap-2 absolute right-[370px] hidden top-[370px] slide-top2">
+                <p>Scroll card<br />ke bawah</p>
+                <span className="[writing-mode:vertical-rl] animate-bounce duration-500">{'>>>>>>>>'}</span>
+            </div>
+            <div className="lg:grid lg:grid-cols-3 lg:h-[400px] h-[600px] p-4 overflow-scroll lg:justify-around space-y-9 lg:space-y-0 lg:gap-9">
                 {projectArr.map((res, i) => {
                     return (
                         <div

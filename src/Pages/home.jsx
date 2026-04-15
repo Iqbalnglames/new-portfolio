@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { projectArr } from "../Utilities/projects";
 const Home = () => {
 const link1 = Math.floor(Math.random() * projectArr.length)
-const link2 = Math.floor(Math.random() * projectArr.length)
+const link2 = link1 == Math.floor(Math.random() * projectArr.length) ? Math.floor(Math.random() * projectArr.length) : Math.floor(Math.random() * projectArr.length) 
   return (
     <>
       <div className="lg:flex">
