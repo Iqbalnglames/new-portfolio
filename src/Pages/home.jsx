@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { projectArr } from "../Utilities/projects";
 const Home = () => {
-const link1 = Math.floor(Math.random() * projectArr.length)
-const link2 = link1 == Math.floor(Math.random() * projectArr.length) ? Math.floor(Math.random() * projectArr.length) : Math.floor(Math.random() * projectArr.length) 
+const link1 = Math.floor(Math.random() * projectArr.length);
+
+let link2;
+do {
+    link2 = Math.floor(Math.random() * projectArr.length);
+} while (link2 === link1);
+
   return (
     <>
       <div className="lg:flex">
@@ -17,7 +22,7 @@ const link2 = link1 == Math.floor(Math.random() * projectArr.length) ? Math.floo
               saat ini berdomisili di Klaten, Jawa Tengah Indonesia.
             </p>
             <p className=" pl-6 -ml-2">
-              Saat ini aku telah membuat satu project developing mulai dari
+              Saat ini aku telah membuat beberapa project developing mulai dari
               frontend maupun backend.
             </p>
           </div>
